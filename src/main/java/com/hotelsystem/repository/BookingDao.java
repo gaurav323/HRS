@@ -1,5 +1,10 @@
-package com.hotelsystem.repository;
+package com.hotelbooking.dao;
 
-public interface BookingDao {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.hotelbooking.entity.BookingEntity;
+
+public interface BookingDao extends JpaRepository<BookingEntity, Long> {
 
 }
+
